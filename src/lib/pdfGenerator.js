@@ -3,17 +3,17 @@ import 'svg2pdf.js';
 
 const fonts = [
 	{
-		file: 'DmSans-Regular.ttf',
+		file: 'DMSans-Regular.ttf',
 		name: 'DM Sans',
 		weight: 'normal',
 	},
 	{
-		file: 'DmSans-Bold.ttf',
+		file: 'DMSans-Bold.ttf',
 		name: 'DM Sans',
 		weight: 'bold',
 	},
 	{
-		file: 'DmMono-Regular.ttf',
+		file: 'DMMono-Regular.ttf',
 		name: 'DM Mono',
 		weight: 'normal',
 	},
