@@ -5,19 +5,19 @@ const fonts = [
 	{
 		file: 'DmSans-Regular.ttf',
 		name: 'DM Sans',
-		url: new URL('../assets/DmSans-Regular.ttf', import.meta.url).href,
+		url: new URL('../assets/DmSans-Regular.ttf?no-inline', import.meta.url).href,
 		weight: 'normal',
 	},
 	{
 		file: 'DmSans-Bold.ttf',
 		name: 'DM Sans',
-		url: new URL('../assets/DmSans-Bold.ttf', import.meta.url).href,
+		url: new URL('../assets/DmSans-Bold.ttf?no-inline', import.meta.url).href,
 		weight: 'bold',
 	},
 	{
 		file: 'DmMono-Regular.ttf',
 		name: 'DM Mono',
-		url: new URL('../assets/DmMono-Regular.ttf', import.meta.url).href,
+		url: new URL('../assets/DmMono-Regular.ttf?no-inline', import.meta.url).href,
 		weight: 'normal',
 	},
 ];
