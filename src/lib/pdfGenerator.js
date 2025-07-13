@@ -1,23 +1,27 @@
 import { jsPDF } from 'jspdf';
 import 'svg2pdf.js';
 
+import dmSansRegular from '../assets/DmSans-Regular.ttf?url';
+import dmSansBold from '../assets/DmSans-Bold.ttf?url';
+import dmMonoRegular from '../assets/DmMono-Regular.ttf?url';
+
 const fonts = [
 	{
 		file: 'DmSans-Regular.ttf',
 		name: 'DM Sans',
-		url: new URL('../assets/DmSans-Regular.ttf?no-inline', import.meta.url).href,
+		url: dmSansRegular,
 		weight: 'normal',
 	},
 	{
 		file: 'DmSans-Bold.ttf',
 		name: 'DM Sans',
-		url: new URL('../assets/DmSans-Bold.ttf?no-inline', import.meta.url).href,
+		url: dmSansBold,
 		weight: 'bold',
 	},
 	{
 		file: 'DmMono-Regular.ttf',
 		name: 'DM Mono',
-		url: new URL('../assets/DmMono-Regular.ttf?no-inline', import.meta.url).href,
+		url: dmMonoRegular,
 		weight: 'normal',
 	},
 ];
