@@ -1,0 +1,50 @@
+.pages {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25in;
+}
+.pages.quarterPages {
+	display: grid;
+	gap: 0.25in;
+	grid-template-columns: repeat(2, auto);
+	align-items: center;
+}
+
+.pages > .page {
+	height: 100vh;
+	width: 100vw;
+}
+.pages.quarterPages > .page {
+	height: 50vh;
+}
+
+.page {
+	background-color: #fff;
+	color: #000;
+}
+
+@media screen {
+	.page {
+		box-shadow: 0 0 0.25in 0 rgba(0, 0, 0, 0.1);
+	}
+
+	.pages > .page {
+		width: 8.5in;
+		height: 11in;
+	}
+	.pages.quarterPages > .page {
+		width: 4.25in;
+		height: 5.5in;
+	}
+}
+
+@media print {
+	.pages {
+		gap: 0 !important;
+	}
+}
+
+@page {
+	size: portrait;
+	margin: 0;
+}

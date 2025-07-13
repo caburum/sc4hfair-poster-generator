@@ -1,0 +1,22 @@
+{
+  "name": "sc4hfair-poster-generator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^6.0.0",
+    "svelte": "^5.35.5",
+    "vite": "^7.0.4"
+  },
+  "dependencies": {
+    "jspdf": "^3.0.1",
+    "qrcode-svg": "^1.1.0",
+    "short-unique-id": "^5.3.2",
+    "svg2pdf.js": "^2.5.0"
+  }
+}
