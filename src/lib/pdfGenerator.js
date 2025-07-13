@@ -1,36 +1,30 @@
 import { jsPDF } from 'jspdf';
 import 'svg2pdf.js';
 
-import dmSansRegular from '../assets/DmSans-Regular.ttf?url';
-import dmSansBold from '../assets/DmSans-Bold.ttf?url';
-import dmMonoRegular from '../assets/DmMono-Regular.ttf?url';
-
 const fonts = [
 	{
 		file: 'DmSans-Regular.ttf',
 		name: 'DM Sans',
-		url: dmSansRegular,
 		weight: 'normal',
 	},
 	{
 		file: 'DmSans-Bold.ttf',
 		name: 'DM Sans',
-		url: dmSansBold,
 		weight: 'bold',
 	},
 	{
 		file: 'DmMono-Regular.ttf',
 		name: 'DM Mono',
-		url: dmMonoRegular,
 		weight: 'normal',
 	},
 ];
 
 jsPDF.API.events.push([
 	'addFonts',
+	/** @this {jsPDF} */
 	function () {
 		for (const font of fonts) {
-			const data = this.loadFile(font.url);
+			const data = this.loadFile(`/assets/${font.file}`);
 			this.addFileToVFS(font.file, data);
 			this.addFont(font.file, font.name, font.weight);
 		}
